@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/resource.css">
+    <title>Resource Management</title>
+</head>
+
+<body>
+
+    <div class="container pl-5 pr-5 mw-100">
+        <div class="container pl-0 pr-0 mw-100 mt-5">
+            <h4 class="mb-3">All Resource</h4>
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+
+                <!-- Pending list button at the start -->
+                <button class="btn btn-outline-primary d-flex align-items-center">
+                    Pending Resources List
+                </button>
+
+                <!-- Search input with icon button -->
+                <div class="input-group" style="max-width: 300px;">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <button class="btn btn-primary" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid p-0 mt-3">
+            <div class="row">
+
+                <div class="col-12 col-md-6 col-lg-4  mb-3">
+                    <div
+                        class="d-flex h-100 align-items-start border rounded p-3 employee-card border border-secondary">
+                        <!-- Employee Photo -->
+                        <span class=" mr-5" style="font-size: 4em; color: gray;">
+                            <i class="fa-regular fa-user"></i>
+                        </span>
+                        <!-- Employee Details -->
+                        <div class="d-flex flex-column justify-content-between  w-100 h-100">
+                            <div>
+                                <h5 class="mb-1">John Doe</h5>
+                                <p class="mb-1 text-muted">Software Engineer</p>
+                                <p class="mb-0"><strong>Current Project:</strong> <br />Billing App</p>
+                            </div>
+
+                            <a class="align-self-end d-flex" href="edit_page.html">
+                                <span style="font-size: 2.5em; color: gray;">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6  col-lg-4  mb-3">
+                    <div
+                        class="d-flex h-100 align-items-start border rounded p-3 employee-card border border-secondary">
+                        <!-- Employee Photo -->
+                        <span class=" mr-5" style="font-size: 4em; color: gray;">
+                            <i class="fa-regular fa-user"></i>
+                        </span>
+                        <!-- Employee Details -->
+                        <div class="d-flex flex-column justify-content-between  w-100 h-100">
+                            <div>
+                                <h5 class="mb-1">Jane Smith</h5>
+                                <p class="mb-1 text-muted">Data Scientist</p>
+                                <p class="mb-0"><strong>Current Project:</strong> <br />AI-powered Recommendation System
+                                </p>
+                            </div>
+
+                            <a class="align-self-end d-flex" href="edit_page.html">
+                                <span style="font-size: 2.5em; color: gray;">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6  col-lg-4  mb-3">
+                    <div
+                        class="d-flex h-100 align-items-start border rounded p-3 employee-card border border-secondary">
+                        <!-- Employee Photo -->
+                        <span class=" mr-5" style="font-size: 4em; color: gray;">
+                            <i class="fa-regular fa-user"></i>
+                        </span>
+                        <!-- Employee Details -->
+                        <div class="d-flex flex-column justify-content-between  w-100 h-100">
+                            <div>
+                                <h5 class="mb-1">Michael Johnson</h5>
+                                <p class="mb-1 text-muted">Frontend Developer</p>
+                                <p class="mb-0"><strong>Current Project:</strong> <br />E-commerce Website Redesign</p>
+                            </div>
+
+                            <a class="align-self-end d-flex" href="edit_page.html">
+                                <span style="font-size: 2.5em; color: gray;">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6  col-lg-4  mb-3">
+                    <div
+                        class="d-flex h-100 align-items-start border rounded p-3 employee-card border border-secondary">
+                        <!-- Employee Photo -->
+                        <span class=" mr-5" style="font-size: 4em; color: gray;">
+                            <i class="fa-regular fa-user"></i>
+                        </span>
+                        <!-- Employee Details -->
+                        <div class="d-flex flex-column justify-content-between  w-100 h-100">
+                            <div>
+                                <h5 class="mb-1">Emily Davis</h5>
+                                <p class="mb-1 text-muted">Backend Developer</p>
+                                <p class="mb-0"><strong>Current Project:</strong> <br />Cloud-Based Inventory Management
+                                    System</p>
+                            </div>
+
+                            <a class="align-self-end d-flex" href="edit_page.html">
+                                <span style="font-size: 2.5em; color: gray;">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6  col-lg-4  mb-3">
+                    <div
+                        class="d-flex h-100 align-items-start border rounded p-3 employee-card border border-secondary">
+                        <!-- Employee Photo -->
+                        <span class=" mr-5" style="font-size: 4em; color: gray;">
+                            <i class="fa-regular fa-user"></i>
+                        </span>
+                        <!-- Employee Details -->
+                        <div class="d-flex flex-column justify-content-between  w-100 h-100">
+                            <div>
+                                <h5 class="mb-1">David Lee</h5>
+                                <p class="mb-1 text-muted">Full Stack Developer</p>
+                                <p class="mb-0"><strong>Current Project:</strong> <br />Social Media Analytics Dashboard
+                                </p>
+                            </div>
+
+                            <a class="align-self-end d-flex" href="edit_page.html">
+                                <span style="font-size: 2.5em; color: gray;">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6  col-lg-4  mb-3">
+                    <div
+                        class="d-flex h-100 align-items-start border rounded p-3 employee-card border border-secondary">
+                        <!-- Employee Photo -->
+                        <span class=" mr-5" style="font-size: 4em; color: gray;">
+                            <i class="fa-regular fa-user"></i>
+                        </span>
+                        <!-- Employee Details -->
+                        <div class="d-flex flex-column justify-content-between  w-100 h-100">
+                            <div>
+                                <h5 class="mb-1">Sarah Williams</h5>
+                                <p class="mb-1 text-muted">Mobile App Developer</p>
+                                <p class="mb-0"><strong>Current Project:</strong> <br />Fitness Tracking App</p>
+                            </div>
+
+                            <a class="align-self-end d-flex" href="edit_page.html">
+                                <span style="font-size: 2.5em; color: gray;">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6  col-lg-4  mb-3">
+                    <div
+                        class="d-flex h-100 align-items-start border rounded p-3 employee-card border border-secondary">
+                        <!-- Employee Photo -->
+                        <span class=" mr-5" style="font-size: 4em; color: gray;">
+                            <i class="fa-regular fa-user"></i>
+                        </span>
+                        <!-- Employee Details -->
+                        <div class="d-flex flex-column justify-content-between  w-100 h-100">
+                            <div>
+                                <h5 class="mb-1">Daniel Brown</h5>
+                                <p class="mb-1 text-muted">DevOps Engineer</p>
+                                <p class="mb-0"><strong>Current Project:</strong> <br />Automated Cloud Infrastructure
+                                    Setup</p>
+
+                            </div>
+
+                            <a class="align-self-end d-flex" href="edit_page.html">
+                                <span style="font-size: 2.5em; color: gray;">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9cce2577c4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

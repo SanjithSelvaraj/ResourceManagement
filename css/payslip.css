@@ -1,0 +1,23 @@
+.action-btns button {
+  margin-right: 5px;
+}
+
+.table thead th {
+  vertical-align: middle;
+  font-weight: normal;
+  color: white;
+}
+
+
+.container {
+  max-width: 100%;
+}
+
+.action-btns {
+  display: flex;
+
+}
+
+.action-btns button {
+  margin-bottom: 5px;
+}
