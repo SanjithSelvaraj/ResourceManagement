@@ -16,67 +16,112 @@
 <body>
 
     <div class="container-fluid p-0">
-        <div class="container-fluid mt-5">
+        <div class="container-fluid mt-5 pl-4 pr-4">
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h4 class="mb-0">Payslip List</h4>
-                <button class="btn btn-primary btn-sm">Create Payslip</button>
-            </div>
-            <div class="table-responsive">
-            <table class="table table-striped mb-0">
-                <thead class="bg-secondary">
-                    <tr>
-                        <th>User</th>
-                        <th>Payslip Month</th>
-                        <th>Number of Days</th>
-                        <th>Notes</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>John Doe</td>
-                        <td>March 2025</td>
-                        <td>22</td>
-                        <td>Full attendance</td>
-                        <td class="action-btns">
-                            <button class="btn btn-info btn-sm">View</button>
-                            <button class="btn btn-success btn-sm">Download</button>
-                            <button class="btn btn-danger btn-sm">Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Jane Smith</td>
-                        <td>February 2025</td>
-                        <td>20</td>
-                        <td>2 days leave</td>
-                        <td class="action-btns">
-                            <button class="btn btn-info btn-sm">View</button>
-                            <button class="btn btn-success btn-sm">Download</button>
-                            <button class="btn btn-danger btn-sm">Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Sam Wilson</td>
-                        <td>January 2025</td>
-                        <td>21</td>
-                        <td>Bonus included</td>
-                        <td class="action-btns">
-                            <button class="btn btn-info btn-sm">View</button>
-                            <button class="btn btn-success btn-sm">Download</button>
-                            <button class="btn btn-danger btn-sm">Delete</button>
-                        </td>
-                    </tr>
-                </tbody>
-
-                
-            </table>
-        </div>
-
-            <div class="d-flex justify-content-between p-2  bg-secondary">
-                <span  class="text-light fs-6" style="font-size: 14px;">Showing 1 to 3 of 3 entries</span>
-                <a class="text-light" style="font-size: 14px;" href="#">Next></a>
+                <button class="btn btn-primary btn-sm" style="display: block;" id="createPayslipBtn" onclick="window.location.href = 'create-payslip.html';">Create
+                    Payslip</button>
             </div>
 
+
+
+            <div class="d-flex flex-column">
+
+                <form class="d-flex align-items-center" id="filterForm">
+                    <div class="form-group mr-3">
+                        <label for="departmentSelect">Department</label>
+                        <select class="form-control" id="departmentSelect">
+                            <option value="">Select Department</option>
+                            <option value="hr">HR</option>
+                            <option value="sales">Sales</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="it">IT</option>
+                            <option value="finance">Finance</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mr-3">
+                        <label for="userSelect">User</label>
+                        <select class="form-control" id="userSelect">
+                            <option value="">Select User</option>
+                            <option value="john">John Doe</option>
+                            <option value="jane">Jane Smith</option>
+                            <option value="mike">Mike Johnson</option>
+                            <option value="emma">Emma Wilson</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group d-flex flex-column mr-3">
+                        <label style="visibility: hidden;">Submit</label>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+
+                    <div class="form-group d-flex flex-column">
+                        <label style="visibility: hidden;">Clear</label>
+                        <button type="button" class="btn btn-dark" id="clearBtn">Clear</button>
+                    </div>
+                </form>
+
+               
+
+            </div>
+
+            <div style="display: none;" id="tableSection">
+                <div class="table-responsive">
+                    <table class="table table-striped mb-0">
+                        <thead class="bg-secondary text-white">
+                            <tr>
+                                <th>User</th>
+                                <th>Payslip Month</th>
+                                <th>Number of Days</th>
+                                <th>Notes</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td class="userName">name here</td>
+                                <td>March 2025</td>
+                                <td>22</td>
+                                <td>Full attendance</td>
+                                <td class="action-btns">
+                                    <button class="btn btn-info btn-sm">View</button>
+                                    <button class="btn btn-success btn-sm">Download</button>
+                                    <button class="btn btn-danger btn-sm">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="userName">name here</td>
+                                <td>February 2025</td>
+                                <td>20</td>
+                                <td>2 days leave</td>
+                                <td class="action-btns">
+                                    <button class="btn btn-info btn-sm">View</button>
+                                    <button class="btn btn-success btn-sm">Download</button>
+                                    <button class="btn btn-danger btn-sm">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="userName">name here</td>
+                                <td>January 2025</td>
+                                <td>21</td>
+                                <td>Bonus included</td>
+                                <td class="action-btns">
+                                    <button class="btn btn-info btn-sm">View</button>
+                                    <button class="btn btn-success btn-sm">Download</button>
+                                    <button class="btn btn-danger btn-sm">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="d-flex justify-content-between p-2  bg-secondary">
+                    <span class="text-light fs-6" style="font-size: 14px;">Showing 1 to 3 of 3 entries</span>
+                    <a class="text-light" style="font-size: 14px;" href="#">Next></a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -92,6 +137,56 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+        <script>
+            document.getElementById('filterForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the form from submitting by default
+            
+                const department = document.getElementById('departmentSelect').value;
+                const user = document.getElementById('userSelect').value;
+            
+                if (!department || !user) {
+                    alert('Please select both Department and User.');
+                }
+            });
+            
+            
+            </script>
+            
+
+    <script>
+        const form = document.getElementById('filterForm');
+        const clearBtn = document.getElementById('clearBtn');
+        const tableSection = document.getElementById('tableSection');
+        const createPayslipBtn = document.getElementById("createPayslipBtn");
+        const userSelect = document.getElementById('userSelect');
+        const departmentSelect = document.getElementById('departmentSelect');
+        
+
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const selectedUser = userSelect.options[userSelect.selectedIndex].text;
+            const selectedDepartment = departmentSelect.options[departmentSelect.selectedIndex].text;
+
+            if (selectedUser !== "Select User" && selectedDepartment !== "Select Department" ) {
+                const userCells = document.querySelectorAll('.userName');
+                userCells.forEach(cell => {
+                    cell.textContent = selectedUser;
+                });
+                tableSection.style.display = 'block';
+                createPayslipBtn.style.display = 'block';
+            }
+        });
+
+        clearBtn.addEventListener('click', function () {
+            document.getElementById('departmentSelect').selectedIndex = 0;
+            document.getElementById('userSelect').selectedIndex = 0;
+            tableSection.style.display = 'none';
+            createPayslipBtn.style.display = 'none';
+        });
+    </script>
+
 </body>
 
 </html>
